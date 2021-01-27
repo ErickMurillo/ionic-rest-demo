@@ -19,7 +19,6 @@ export class HomePage {
   databaseObj: SQLiteObject;
   name_model: string = "";
   row_data: any = [];
-  readonly database_name: string = "freaky_datatable.db";
   public cursos:any;
   constructor(
             public navCtrl: NavController,
@@ -37,7 +36,6 @@ export class HomePage {
     })
 
   }
-
 
   getCursoList() {
     this.postServices.getPosts()
